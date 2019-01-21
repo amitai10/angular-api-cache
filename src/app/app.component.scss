@@ -1,0 +1,30 @@
+.container {
+  font-family: sans-serif;
+  font-size: 150%;
+  margin: 20px;
+}
+.city {
+  display: flex;
+}
+.text {
+  margin: 0 10px;
+}
+.title {
+  font-size: 300%;
+  text-align: center;
+  margin-top: 20px;
+}
+.weather-container {
+  display: flex;
+  padding: 10px;
+}
+.forecast {
+  margin: 5px;
+  border: solid 1px black;
+  padding: 20px;
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
