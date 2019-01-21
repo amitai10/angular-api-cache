@@ -1,27 +1,23 @@
-# MyWeatherApp
+# Angular PWA - offline first
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.2.
+Angular offers out of the box PWA offline support both for assets and Api calls.
 
-## Development server
+This is an example for weather application.
+This application has a service worker that caches the static assets (angular js staff), and the calls to openweathermap.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Executing (you will need http-server installed before): 
+```
+ng build --prod'
+cd dist/my-weather-app
+http-server -c-1 .
+```
+Open browser on 'http://localhost:8080/'
 
-## Code scaffolding
+Then search for few cities.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+In order to work offline, Kill the server and the network.  
+Refresh the page and search for the same cities, everything is working. Search for a new city you will get an error.
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
